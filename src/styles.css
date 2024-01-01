@@ -1,0 +1,94 @@
+:root {
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background-color: #ebdb8d;
+  color: #110706;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  width: min(90%, 64rem);
+  margin-inline: auto;
+}
+
+/* header */
+.header {
+  display: grid;
+  justify-content: center;
+  background-color: #110706;
+  padding: 2rem;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.navbar a {
+  color: #ebdb8d;
+  text-decoration: none;
+  border: 0.1rem solid #ebdb8d;
+  padding: 0.5rem 1.2rem;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  background-color: #ebdb8d;
+  color: #110706;
+}
+
+/* content */
+.content {
+  display: grid;
+  gap: 2rem;
+  padding-block: 3.2rem;
+}
+
+/* menu */
+.menu-list {
+  display: grid;
+  gap: 2rem;
+}
+
+.menu-item {
+  padding-bottom: 2rem;
+  border-bottom: 0.1rem dashed #110706;
+}
+
+.item,
+.price {
+  font-weight: 600;
+}
+
+.description {
+  display: block;
+}
