@@ -110,6 +110,26 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/ContactPage.js":
+/*!****************************!*\
+  !*** ./src/ContactPage.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   ContactPage: () => (/* binding */ ContactPage)\n/* harmony export */ });\nconst ContactPage = () => {\r\n  return `\r\n  <h1>🌟 Contact Brew Haven 🌟</h1>\r\n  <p>We'd love to hear from you! Whether you have a question, suggestion, or just want to share your Brew Haven\r\n    experience, we're here for you. Feel free to reach out through the following channels:</p>\r\n\r\n  <h2>📍 Visit Us 📍</h2>\r\n  <ul>\r\n    <li>Brew Haven Coffee Shop</li>\r\n    <li>1234 Java Street</li>\r\n    <li>Coffee City, CO 12345</li>\r\n  </ul>\r\n\r\n  <h2>📞 Call Us 📞</h2>\r\n  <p>Customer Service Hotline: (555) 123-4567</p>\r\n\r\n  <h2>📧 Email Us 📧</h2>\r\n  <ul>\r\n    <li>General Inquiries: info@brewhaven.com</li>\r\n    <li>Customer Support: support@brewhaven.com</li>\r\n  </ul>\r\n\r\n  <h2>🕒 Opening Hours 🕒</h2>\r\n  <ul>\r\n    <li>Monday - Friday: 7:00 AM - 7:00 PM</li>\r\n    <li>Saturday - Sunday: 8:00 AM - 6:00 PM</li>\r\n  </ul>`;\r\n};\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/ContactPage.js?");
+
+/***/ }),
+
+/***/ "./src/ContentContainer.js":
+/*!*********************************!*\
+  !*** ./src/ContentContainer.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   ContentContainer: () => (/* binding */ ContentContainer)\n/* harmony export */ });\n/* harmony import */ var _HomePage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HomePage */ \"./src/HomePage.js\");\n/* harmony import */ var _MenuPage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./MenuPage */ \"./src/MenuPage.js\");\n/* harmony import */ var _ContactPage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ContactPage */ \"./src/ContactPage.js\");\n\r\n\r\n\r\n\r\nconst ContentContainer = currentPage => {\r\n  let content = '';\r\n\r\n  switch (currentPage) {\r\n    case 0:\r\n      content = (0,_HomePage__WEBPACK_IMPORTED_MODULE_0__.HomePage)();\r\n      break;\r\n    case 1:\r\n      content = (0,_MenuPage__WEBPACK_IMPORTED_MODULE_1__.MenuPage)();\r\n      break;\r\n    case 2:\r\n      content = (0,_ContactPage__WEBPACK_IMPORTED_MODULE_2__.ContactPage)();\r\n      break;\r\n    default:\r\n      content = (0,_HomePage__WEBPACK_IMPORTED_MODULE_0__.HomePage)();\r\n      break;\r\n  }\r\n  return `<main class=\"content container\">\r\n    ${content}\r\n  </main>`;\r\n};\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/ContentContainer.js?");
+
+/***/ }),
+
 /***/ "./src/Header.js":
 /*!***********************!*\
   !*** ./src/Header.js ***!
@@ -120,13 +140,43 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/HomePage.js":
+/*!*************************!*\
+  !*** ./src/HomePage.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   HomePage: () => (/* binding */ HomePage)\n/* harmony export */ });\n/* harmony import */ var _img_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./img.jpg */ \"./src/img.jpg\");\n\r\n\r\nconst HomePage = () => {\r\n  return `\r\n  <h1>Welcome to Brew Haven – Your Perfect Sip Awaits!</h1>\r\n\r\n  <img src=\"${_img_jpg__WEBPACK_IMPORTED_MODULE_0__}\" alt=\"\">\r\n\r\n  <h2>🌟 About Us 🌟</h2>\r\n  <p class=\"info\">At Brew Haven, we believe that every cup of coffee tells a story. Our cozy\r\n    coffee shop is a haven for coffee enthusiasts and casual sippers alike. From the moment you step through our\r\n    doors, the rich aroma of freshly ground beans welcomes you to an unparalleled coffee experience.</p>`;\r\n};\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/HomePage.js?");
+
+/***/ }),
+
+/***/ "./src/MenuPage.js":
+/*!*************************!*\
+  !*** ./src/MenuPage.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   MenuPage: () => (/* binding */ MenuPage)\n/* harmony export */ });\nconst MenuPage = () => {\r\n  return `\r\n  <h1>🌟 Brew Haven Menu 🌟</h1>\r\n\r\n  <h2>☕ Espresso Delights ☕</h2>\r\n  <ul class=\"menu-list\">\r\n    <li class=\"menu-item\">\r\n      <span class=\"item\">Classic Espresso</span>\r\n      <span class=\"description\">Rich and robust, our traditional espresso is the perfect\r\n        pick-me-up.</span>\r\n      <span class=\"price\">$2.50</span>\r\n    </li>\r\n    <li class=\"menu-item\">\r\n      <span class=\"item\">Americano</span>\r\n      <span class=\"description\">A smooth blend of espresso and hot water for a milder yet\r\n        full-bodied flavor.</span>\r\n      <span class=\"price\">$3.00</span>\r\n    </li>\r\n    <li class=\"menu-item\">\r\n      <span class=\"item\">Macchiato</span>\r\n      <span class=\"description\">Espresso with a dollop of frothy milk for a delightful balance of\r\n        bold and creamy.</span>\r\n      <span class=\"price\">$3.50</span>\r\n    </li>\r\n  </ul>\r\n\r\n  <h2>🌈 Signature Blends 🌈</h2>\r\n  <ul class=\"menu-list\">\r\n    <li class=\"menu-item\">\r\n      <span class=\"item\">Brew Haven Blend</span>\r\n      <span class=\"description\">Our house specialty - a harmonious blend of beans that creates a\r\n        cup of pure bliss.</span>\r\n      <span class=\"price\">$4.00</span>\r\n    </li>\r\n    <li class=\"menu-item\">\r\n      <span class=\"item\">Single-Origin Delights</span>\r\n      <span class=\"description\">Discover the unique flavors of coffee from distinct regions\r\n        around the world.</span>\r\n      <span class=\"price\">$4.50</span>\r\n    </li>\r\n  </ul>\r\n\r\n  <h2>🍵 Teas & Infusions 🍵</h2>\r\n  <ul class=\"menu-list\">\r\n    <li class=\"menu-item\">\r\n      <span class=\"item\">Artisanal Teas</span>\r\n      <span class=\"description\">A curated selection of premium loose-leaf teas for a refreshing\r\n        alternative.</span>\r\n      <div class=\"price\">$3.50</div>\r\n    </li>\r\n    <li class=\"menu-item\">\r\n      <span class=\"item\">Chai Latte</span>\r\n      <span class=\"description\">Spiced perfection with our special chai blend and steamed\r\n        milk.</span>\r\n      <div class=\"price\">$4.00</div>\r\n    </li>\r\n  </ul>\r\n\r\n  <h2>❄️ Iced Indulgences ❄️</h2>\r\n  <ul class=\"menu-list\">\r\n    <li class=\"menu-item\">\r\n      <span class=\"item\">Iced Americano</span>\r\n      <span class=\"description\">Chilled perfection with our signature espresso over ice.</span>\r\n      <span class=\"price\">$3.50</span>\r\n    </li>\r\n    <li class=\"menu-item\">\r\n      <span class=\"item\">Iced Latte</span>\r\n      <span class=\"description\">A cool and creamy concoction of espresso and cold milk.</span>\r\n      <span class=\"price\">$4.00</span>\r\n    </li>\r\n    <li class=\"menu-item\">\r\n      <span class=\"item\">Fruit Infused Cold Brew</span>\r\n      <span class=\"description\">A refreshing twist on cold brew with hints of citrus and\r\n        berries.</span>\r\n      <span class=\"price\">$4.50</span>\r\n    </li>\r\n  </ul>\r\n\r\n  <h2>🌿 Alternative Brews 🌿</h2>\r\n  <ul class=\"menu-list\">\r\n    <li class=\"menu-item\">\r\n      <span class=\"item\">Pour-Over Perfection</span>\r\n      <span class=\"description\">Experience the meticulous pour-over method with your choice of\r\n        beans.</span>\r\n      <span class=\"price\">$5.00</span>\r\n    </li>\r\n    <li class=\"menu-item\">\r\n      <span class=\"item\">Aeropress Adventure</span>\r\n      <span class=\"description\">A unique brewing process for a bold and concentrated flavor\r\n        profile.</span>\r\n      <span class=\"price\">$5.50</span>\r\n    </li>\r\n    <li class=\"menu-item\">\r\n      <span class=\"item\">Turkish Delight</span>\r\n      <span class=\"description\">A traditional preparation with finely ground coffee and aromatic\r\n        spices.</span>\r\n      <span class=\"price\">$4.50</span>\r\n    </li>\r\n  </ul>\r\n\r\n  <h2>🥐 Delectable Pairings 🥐</h2>\r\n  <ul class=\"menu-list\">\r\n    <li class=\"menu-item\">\r\n      <span class=\"item\">Buttery Croissants</span>\r\n      <span class=\"description\">Light, flaky, and perfect with your morning coffee.</span>\r\n      <span class=\"price\">$3.00</span>\r\n    </li>\r\n    <li class=\"menu-item\">\r\n      <span class=\"item\">Avocado Toast</span>\r\n      <span class=\"description\">Served on artisanal bread with a hint of spice for a satisfying\r\n        bite.</span>\r\n      <span class=\"price\">$6.00</span>\r\n    </li>\r\n    <li class=\"menu-item\">\r\n      <span class=\"item\">Sweet Temptations</span>\r\n      <span class=\"description\">Indulge in our daily selection of pastries and desserts.</span>\r\n      <span class=\"price\">(Prices vary)</span>\r\n    </li>\r\n  </ul>\r\n\r\n  <h2>🥤 Cold Refreshments 🥤</h2>\r\n  <ul class=\"menu-list\">\r\n    <li class=\"menu-item\">\r\n      <span class=\"item\">Freshly Squeezed Juices</span>\r\n      <span class=\"description\">Quench your thirst with our selection of vibrant, natural\r\n        juices.</span>\r\n      <span class=\"price\">$4.00</span>\r\n    </li>\r\n    <li class=\"menu-item\">\r\n      <span class=\"item\">Soda Floats</span>\r\n      <span class=\"description\">A playful combination of soda and creamy vanilla ice cream.</span>\r\n      <span class=\"price\">$4.50</span>\r\n    </li>\r\n  </ul>\r\n\r\n  <h2>🍯 Sweet Endings 🍯</h2>\r\n  <ul class=\"menu-list\">\r\n    <li class=\"menu-item\">\r\n      <span class=\"item\">Affogato</span>\r\n      <span class=\"description\">A scoop of velvety vanilla ice cream drowned in a shot of hot\r\n        espresso.</span>\r\n      <span class=\"price\">$5.00</span>\r\n    </li>\r\n    <li class=\"menu-item\">\r\n      <span class=\"item\">Decadent Chocolate Brownie</span>\r\n      <span class=\"description\">Rich and gooey, the perfect finale to your Brew Haven\r\n        experience.</span>\r\n      <span class=\"price\">$3.50</span>\r\n    </li>\r\n  </ul>\r\n\r\n  <p>\r\n    Gluten-free and vegan options are available for many of our menu\r\n    items. Please ask our friendly staff for details.\r\n  </p>`;\r\n};\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/MenuPage.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Header_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Header.js */ \"./src/Header.js\");\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n\r\n\r\n\r\n\r\nconst contentDiv = document.querySelector('#content');\r\n\r\ncontentDiv.insertAdjacentHTML('afterbegin', (0,_Header_js__WEBPACK_IMPORTED_MODULE_0__.Header)());\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Header_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Header.js */ \"./src/Header.js\");\n/* harmony import */ var _ContentContainer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ContentContainer.js */ \"./src/ContentContainer.js\");\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n\r\n\r\n\r\n\r\nconst contentDiv = document.querySelector('#content');\r\n\r\ncontentDiv.insertAdjacentHTML('afterbegin', (0,_Header_js__WEBPACK_IMPORTED_MODULE_0__.Header)());\r\n\r\nconst header = document.querySelector('.header');\r\n\r\nlet currentPage = 0;\r\n\r\nheader.insertAdjacentHTML('afterend', (0,_ContentContainer_js__WEBPACK_IMPORTED_MODULE_1__.ContentContainer)(currentPage));\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/img.jpg":
+/*!*********************!*\
+  !*** ./src/img.jpg ***!
+  \*********************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"f0e99e60a4b12389984d.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/img.jpg?");
 
 /***/ })
 
@@ -181,6 +231,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Hea
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -195,6 +257,29 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Hea
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
